@@ -16,9 +16,10 @@ stages {
 		}
 	}	
 
-	stage('Test') {
+	stage('Build') {
 		steps {
 			echo "test my final webapp"
+              sh 'mvn clean package'
 		}
 	}
 
